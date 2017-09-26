@@ -23,4 +23,12 @@ let convert = (sentence) => {
   return result.join(" ")
 }
 
-// Your CLI code here
+let arg = process.argv;
+let kata ='';
+arg = {
+  'kata1'  : arg[2],
+  'kata2' : arg[3]
+}
+kata = arg.kata1+' '+arg.kata2;
+console.log(convert(kata));
+
