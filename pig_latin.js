@@ -1,5 +1,5 @@
 'use strict'
-
+//mengenal fungsi proses.argv pada nodejs
 let pigLatin = (word) => {
   let firstLetter = word.charAt(0);
   if(isPowel(firstLetter)){
@@ -24,3 +24,6 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+let sapa=process.argv;
+let word=sapa.slice(2).join(' ');
+console.log(convert(word));
