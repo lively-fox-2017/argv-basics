@@ -23,4 +23,17 @@ let convert = (sentence) => {
   return result.join(" ")
 }
 
+let arr = process.argv
+let array = arr.splice(2)
+let temp = ''
+for (var i = 0; i < array.length; i++) {
+  temp+=array[i]+ " "
+}
+
+console.log(convert(temp));
+
+
+
+
+
 // Your CLI code here
