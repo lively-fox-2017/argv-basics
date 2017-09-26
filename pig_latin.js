@@ -24,3 +24,10 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+var input = process.argv;
+var sentence = "";
+for(var i =2;i<input.length;i++){
+  sentence += input[i] + " "
+}
+
+console.log(convert(sentence))
