@@ -24,3 +24,10 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+let argv = process.argv
+//console.log(argv[2], argv[3])
+
+console.log(pigLatin(argv[2] + ' ' + argv[3]))
+console.log(isPowel(argv[3]))
+//console.log(convert(argv[2])
+
