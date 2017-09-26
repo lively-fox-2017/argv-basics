@@ -25,5 +25,10 @@ let convert = (sentence) => {
 
 // Your CLI code here
 var argv = process.argv
+var argvi = {
+  'kata' : argv[2],
+  'kata2': argv[3]
+}
 
-console.log(convert(argv[2]));
+var kata = argvi.kata + ' ' + argvi.kata2
+console.log(convert(kata));
