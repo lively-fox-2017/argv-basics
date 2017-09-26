@@ -28,6 +28,12 @@ let convert = (sentence) => {
 // Your CLI code here
 // console.log(process.argv.length)
 let sentenceArr = process.argv
-sentenceArr.shift()
-sentenceArr.shift()
-console.log(convert(sentenceArr.join(' ')))
+let sentence = ''
+for (let i = 2; i < process.argv.length; i++) {
+  sentence += process.argv[i] + ' '
+}
+console.log(convert(sentence))
+
+// sentenceArr.shift()
+// sentenceArr.shift()
+// console.log(convert(sentenceArr.join(' ')))
