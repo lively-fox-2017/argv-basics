@@ -1,11 +1,18 @@
 'use strict'
 
+let arr = process.argv
+let kata = arr.slice(2).join(' ')
+
 let pigLatin = (word) => {
   let firstLetter = word.charAt(0);
   if(isPowel(firstLetter)){
     return word
   }else{
-    return `${word.substr(1)}${firstLetter}ay`;
+    for (var i = 0; i < word.length; i++) {
+      if (isPowel(word[i])) {
+        return `${word.substr(i)}${word.substr(0,i)}ay`;
+      }
+    }
   }
 }
 
@@ -24,3 +31,4 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+console.log(convert(kata))
