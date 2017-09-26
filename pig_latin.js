@@ -23,4 +23,14 @@ let convert = (sentence) => {
   return result.join(" ")
 }
 
-// Your CLI code here
+// Your CLI code heree
+
+let arr = process.argv
+
+let hasil = ''
+
+for (let i = 2; i < arr.length; i++) {
+  hasil = hasil + arr[i] + ' '
+}
+
+console.log(convert(hasil));
