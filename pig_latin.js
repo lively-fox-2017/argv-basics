@@ -23,4 +23,5 @@ let convert = (sentence) => {
   return result.join(" ")
 }
 
-// Your CLI code here
+let arr=process.argv
+console.log(convert(arr[2]+' '+arr[3]))
