@@ -23,4 +23,11 @@ let convert = (sentence) => {
   return result.join(" ")
 }
 
+var argv = process.argv.slice(2) // menghasilkan array
+console.log(pigLatin(argv[0]));
+console.log(pigLatin(argv[1]));
+console.log(isPowel(argv[0]));
+console.log(convert(argv.join(' ')));
+
 // Your CLI code here
+// node pig_latin.js hello world
