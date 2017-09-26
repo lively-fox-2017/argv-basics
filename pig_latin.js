@@ -10,6 +10,7 @@ let pigLatin = (word) => {
 }
 
 let isPowel = (char) => {
+  //console.log((/^[aeiou]$/i).test(char))
   return (/^[aeiou]$/i).test(char);
 }
 
@@ -24,3 +25,11 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+//console.log(convert('hello world'))
+let inputSentence = process.argv
+let result = ''
+for(let i=2; i<inputSentence.length; i++){
+  result+=inputSentence[i]+ ' '
+}
+
+console.log(convert(result))
