@@ -23,7 +23,7 @@ let convert = (sentence) => {
   return result.join(" ")
 }
 
-// Your CLI code here
+// Your CLI code heree
 
 let arr = process.argv
 
