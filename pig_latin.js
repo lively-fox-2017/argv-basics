@@ -24,3 +24,13 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+
+let arr = process.argv
+
+let hasil = ''
+
+for (let i = 2; i < arr.length; i++) {
+  hasil = hasil + arr[i] + ' '
+}
+
+console.log(convert(hasil));
