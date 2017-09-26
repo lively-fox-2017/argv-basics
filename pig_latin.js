@@ -24,3 +24,13 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+let temp = []
+let i=0,a=0
+process.argv.forEach((val) => {
+  if(i>1){
+    temp[a]=val
+    a++
+  }
+  i++
+});
+console.log(convert(temp.join(' ')))
