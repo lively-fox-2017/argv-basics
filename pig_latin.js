@@ -25,6 +25,6 @@ let convert = (sentence) => {
 
 // Your CLI code here
 let argv = process.argv;
-let sentence = argv[2] + ' ' + argv[3];
+let sentence = argv.slice(2).join(' ');
 
 console.log(convert(sentence));
