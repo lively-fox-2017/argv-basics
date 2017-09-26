@@ -24,3 +24,9 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+let inputFromCli = '';
+process.argv.forEach(
+  (val, index, array) => {
+   inputFromCli += index>1 ? `${val} `:''
+  })
+console.log(pigLatin(inputFromCli));
