@@ -24,3 +24,9 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+let sentence = '';
+process.argv.forEach((val, index) => {
+  if(index > 1)
+    sentence += val;
+})
+console.log(convert(sentence));
