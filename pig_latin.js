@@ -23,4 +23,13 @@ let convert = (sentence) => {
   return result.join(" ")
 }
 
+let arr = process.argv;
+// console.log(arr);
+let tampung = ''
+
+for (let i =2; i<arr.length; i++){
+  tampung += arr[i] + ' '
+}
+
+console.log(convert(tampung));
 // Your CLI code here
